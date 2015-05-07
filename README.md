@@ -8,7 +8,7 @@ The application currently supports iOS and Android operating systems.
 
 ## iOS Installation
 
-Go to the folder in which the application is stored and enter the following command:
+Go to the folder in which the application is stored and enter the following command into the terminal window:
 
     cordova build ios
     
@@ -25,7 +25,7 @@ Otherwise, once the project is built in cordova, it can be opened in Xcode and r
 
 ## Android Installation
 
-Go to the folder in which the application is stored and enter the following command:
+Go to the folder in which the application is stored and enter the following command into the command line:
 
     cordova build android
     
