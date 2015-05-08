@@ -1,4 +1,4 @@
-var HomeView = function () {
+var LeftHandView = function() {
 	
 	this.initialize = function() {
 		this.$el = $("<div/>");
@@ -6,10 +6,9 @@ var HomeView = function () {
 	}
 
 	this.render = function() {
-        this.$el.html(this.template());
-        return this;
-    }
+		this.$el.html(this.template());
+		return this;
+	}
 
 	this.initialize();
 }
-
