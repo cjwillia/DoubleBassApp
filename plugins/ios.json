@@ -12,6 +12,42 @@
                             "xml": true,
                             "count": 1
                         }
+                    ],
+                    "UIKit.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "Foundation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "QuartzCore.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "ImageIO.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "MessageUI.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -33,6 +69,10 @@
                         {
                             "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SitewaertsDocumentViewer\"><param name=\"ios-package\" value=\"SitewaertsDocumentViewer\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -44,6 +84,9 @@
             "PACKAGE_NAME": "com.dj.doublebass"
         },
         "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.dj.doublebass"
+        },
+        "de.sitewaerts.cordova.documentviewer": {
             "PACKAGE_NAME": "com.dj.doublebass"
         }
     },

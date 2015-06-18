@@ -10,5 +10,17 @@
             "type": "registry",
             "id": "org.apache.cordova.statusbar"
         }
+    },
+    "br.paveisistemas.com.cordova-plugin-openfilenative": {
+        "source": {
+            "type": "registry",
+            "id": "br.paveisistemas.com.cordova-plugin-openfilenative"
+        }
+    },
+    "de.sitewaerts.cordova.documentviewer": {
+        "source": {
+            "type": "registry",
+            "id": "de.sitewaerts.cordova.documentviewer"
+        }
     }
 }

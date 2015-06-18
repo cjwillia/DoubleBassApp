@@ -15,6 +15,20 @@
                         {
                             "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SitewaertsDocumentViewer\"><param name=\"android-package\" value=\"de.sitewaerts.cordova.documentviewer.DocumentViewerPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -26,6 +40,9 @@
             "PACKAGE_NAME": "com.dj.doublebass"
         },
         "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.dj.doublebass"
+        },
+        "de.sitewaerts.cordova.documentviewer": {
             "PACKAGE_NAME": "com.dj.doublebass"
         }
     },

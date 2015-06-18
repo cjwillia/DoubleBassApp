@@ -8,6 +8,9 @@
 </head>
 <body>
 
+    <!-- This page is formatted as a series of Handlebars Templates -->
+    <!-- All navigation is done by manipulating the javascript on the page to change templates -->
+
     <!-- Template for the Home Page -->
     <script id="home-tpl" type="text/template">
         <header class="bar bar-nav">
@@ -69,7 +72,7 @@
         <div class="content">
             <ul class="table-view">
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#viewer/1" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Equipment</div>
                     </a>
@@ -233,6 +236,23 @@
                 </li>
             </ul>
         </div>
+    </script>
+
+    <!-- Template for the PDF Loading Page -->
+    <script id="pdf-loading-tpl" type="text/template">
+            <header class="bar bar-nav">
+                <h1 class="title">Please Wait...</h1>
+            </header>
+            <div class="content">
+                <div class="bar bar-standard">
+                    Please wait for your PDF to load.
+                </div>
+                <div class="bar bar-standard">
+                    <a href="#">
+                        <button class="btn">Go Back</button>
+                    </a>
+                </div>
+            </div>
     </script>
 
     <script src="cordova.js"></script>

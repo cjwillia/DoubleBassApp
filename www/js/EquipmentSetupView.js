@@ -10,5 +10,6 @@ var EquipmentSetupView = function() {
         return this;
 	}
 
+
 	this.initialize();
 }
