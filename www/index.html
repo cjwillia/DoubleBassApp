@@ -72,19 +72,19 @@
         <div class="content">
             <ul class="table-view">
                 <li class="table-view-cell media">
-                    <a href="#viewer/1" class="navigate-right">
+                    <a href="#page/0" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Equipment</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/1" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Standing with the Bass</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/2" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Using a Stool</div>
                     </a>
@@ -103,42 +103,48 @@
     <!-- Template for the Left Hand Page -->
     <script id="left-hand-tpl" type="text/template">
         <header class="bar bar-nav">
+            <a href="#">
+                <button class="btn btn-link btn-nav pull-left">
+                        <span class="icon icon-left-nav"></span>
+                        Back
+                </button>
+            </a>
             <h1 class="title">Left Hand</h1>
         </header>
         <div class="content">
             <ul class="table-view">
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/3" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Left Hand Guidelines</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/4" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Shifting Basics</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/5" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Vibrato Basics</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/6" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Learning Vibrato</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/7" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Vibrato Exercise</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/8" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Thumb Position</div>
                     </a>
@@ -157,36 +163,42 @@
     <!-- Template for the Right Hand Page -->
     <script id="right-hand-tpl" type="text/template">
         <header class="bar bar-nav">
+            <a href="#">
+                <button class="btn btn-link btn-nav pull-left">
+                        <span class="icon icon-left-nav"></span>
+                        Back
+                </button>
+            </a>
             <h1 class="title">Right Hand</h1>
         </header>
         <div class="content">
             <ul class="table-view">
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/9" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Pizzicato</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/10" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">French Bow</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/11" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">German Bow</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/12" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Bow Arm Exercises</div>
                     </a>
                 </li>
                 <li class="table-view-cell media">
-                    <a href="#" class="navigate-right">
+                    <a href="#page/13" class="navigate-right">
                         <img src="assets/pics/bassclef1.png" class="media-object pull-left">
                         <div class="media-body">Tone Production</div>
                     </a>
@@ -238,22 +250,11 @@
         </div>
     </script>
 
-    <!-- Template for the PDF Loading Page -->
-    <script id="pdf-loading-tpl" type="text/template">
-            <header class="bar bar-nav">
-                <h1 class="title">Please Wait...</h1>
-            </header>
-            <div class="content">
-                <div class="bar bar-standard">
-                    Please wait for your PDF to load.
-                </div>
-                <div class="bar bar-standard">
-                    <a href="#">
-                        <button class="btn">Go Back</button>
-                    </a>
-                </div>
-            </div>
+    <!-- Template for Content Pages -->
+    <script id="content-page-tpl" type="text/template">
+
     </script>
+
 
     <script src="cordova.js"></script>
     <script src="lib/handlebars.js"></script>
@@ -266,6 +267,8 @@
     <script src="js/LeftHandView.js"></script>
     <script src="js/RightHandView.js"></script>
     <script src="js/ScalesView.js"></script>
+    <script src="js/ContentPageView.js"></script>
+    <script src="js/routes.js"></script>
     <script src="js/app.js"></script>
 
 </body>

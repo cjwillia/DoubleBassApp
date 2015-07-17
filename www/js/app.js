@@ -7,30 +7,12 @@
     LeftHandView.prototype.template = Handlebars.compile($("#left-hand-tpl").html());
     RightHandView.prototype.template = Handlebars.compile($("#right-hand-tpl").html());
     ScalesView.prototype.template = Handlebars.compile($("#scales-tpl").html());
+    ContentPageView.prototype.template = Handlebars.compile($("#content-page-tpl").html());
+
+    var service = new MemoryService();
     
     service.initialize().done(function(){
-
-        router.addRoute('', function() {
-            $("body").html(new HomeView().render().$el);
-        });
-
-        router.addRoute('equipment-setup', function() {
-            $("body").html(new EquipmentSetupView(service).render().$el);
-        });
-
-        router.addRoute('left-hand', function() {
-            $("body").html(new LeftHandView(service).render().$el);
-        });
-
-        router.addRoute('right-hand', function() {
-            $("body").html(new RightHandView(service).render().$el);
-        });
-
-        router.addRoute('scales', function() {
-            $("body").html(new ScalesView(service).render().$el);
-        });
-    
-        router.start();        
+        setRoutes(router);       
     });
 
     /* --------------------------------- Event Registration -------------------------------- */

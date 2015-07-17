@@ -28,7 +28,7 @@ var PDFService = function() {
         }
         var v = this.viewer;
         this.findById().done(function(pdf) {
-            if(typeof v.displayPdf !== "undefined") {
+            if(typeof v !== "undefined") {
                 var promise = v.displayPdf(pdf, onClose);
                 promise.done(callback);
                 promise.fail(pdfFail);

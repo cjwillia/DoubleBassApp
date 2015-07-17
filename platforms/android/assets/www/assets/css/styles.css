@@ -2,8 +2,21 @@ ul {
     clear: both;
 }
 
+h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+p {
+    padding: 0px 5px;
+}
+
 .content {
     position: absolute;
+}
+
+.title {
+    font-weight: bold;
 }
 
 .bar-header-secondary>input {
